@@ -8,6 +8,7 @@ const userRoute = require('./routes/userRoute');
 const orderRoute = require('./routes/orderRoute');
 const payment = require('./routes/paymentRoute');
 const dotenv = require('dotenv');
+var cors = require('cors');
 const app = express();
 
 // app.use(express.json());
