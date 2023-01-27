@@ -36,7 +36,7 @@
 //   });
 // };
 
-const ErrorHandler = require('../utils/errorhandler');
+const ErrorHandler = require('../utils/errorHandler');
 
 module.exports = (err, req, res, next) => {
   err.statusCode = err.statusCode || 500;
