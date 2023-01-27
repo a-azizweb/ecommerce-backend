@@ -13,18 +13,6 @@ dotenv.config({ path: 'config/config.env' });
 //connecting to  database
 connectDatabase();
 
-//serving the frontend
-
-app.use(express.static(path.join(__dirname, '../Frontend/build')));
-app.get('*', (req, res) => {
-  res.sendFile(
-    path.join(__dirname, '../Frontend/build/index.html'),
-    function (err) {
-      res.status(500).send(err);
-    }
-  );
-});
-
 //adding cloudinary
 cloudinary.config({
   cloud_name: 'debqaeiq0',
