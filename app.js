@@ -8,7 +8,7 @@ const userRoute = require('./routes/userRoute');
 const orderRoute = require('./routes/orderRoute');
 const payment = require('./routes/paymentRoute');
 const dotenv = require('dotenv');
-var cors = require('cors');
+// var cors = require('cors');
 const app = express();
 
 // app.use(express.json());
@@ -21,11 +21,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json({ limit: '25mb' }));
-app.use(
-  cors({
-    origin: ['http://localhost:3000', 'https://ecommerce-0rgq.onrender.com'],
-  })
-);
+// app.use(
+//   cors({
+//     origin: ['http://localhost:3000', 'https://ecommerce-0rgq.onrender.com'],
+//   })
+// );
 
 app.use(fileUpload());
 
