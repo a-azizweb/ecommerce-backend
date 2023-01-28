@@ -34,10 +34,10 @@ app.use(fileUpload());
 
 //this means ('/api/v1/products',(req,res)=>{})
 //the '/proucts' and the callback fnc is imported from productRoute.js file
-app.use('https://ecommerce-0rgq.onrender.com', productRoute);
-app.use('https://ecommerce-0rgq.onrender.com', userRoute);
-app.use('https://ecommerce-0rgq.onrender.com', orderRoute);
-app.use('https://ecommerce-0rgq.onrender.com', payment);
+app.use('https://ecommerce-back-7m1l.onrender.com/api/v1', productRoute);
+app.use('https://ecommerce-back-7m1l.onrender.com/api/v1', userRoute);
+app.use('https://ecommerce-back-7m1l.onrender.com/api/v1', orderRoute);
+app.use('https://ecommerce-back-7m1l.onrender.com/api/v1', payment);
 
 app.use(errorMiddleware);
 module.exports = app;
