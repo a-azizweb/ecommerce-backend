@@ -24,7 +24,7 @@ app.use(express.json({ limit: '25mb' }));
 // app.use(cors());
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://ecommerce-0rgq.onrender.com'],
+    origin: ['http://localhost:4000', 'https://ecommerce-0rgq.onrender.com'],
   })
 );
 
